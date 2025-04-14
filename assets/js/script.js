@@ -648,6 +648,29 @@
 
     });
 
+    /* For Lezy louding 
+    document.addEventListener("DOMContentLoaded", function () {
+        const lazyBackgrounds = [].slice.call(document.querySelectorAll(".lazy-bg"));
+      
+        if ("IntersectionObserver" in window) {
+          let lazyBgObserver = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                let bg = entry.target;
+                bg.style.backgroundImage = 'url(' + bg.dataset.bg + ')';
+                bg.classList.remove("lazy-bg");
+                lazyBgObserver.unobserve(bg);
+              }
+            });
+          });
+      
+          lazyBackgrounds.forEach(function (lazyBg) {
+            lazyBgObserver.observe(lazyBg);
+          });
+        }
+      }); */
+      
+
 
 
 })(window.jQuery);

@@ -9,22 +9,83 @@
     <meta name="author" content="irstheme">
 
     <title> SARALA INFRASTRUCTURE </title>
+    <!-- 🌟 Critical CSS Inlined for Faster Load -->
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Poppins:500,600,700|Roboto:400,400i,500,700&display=swap");
+        html { font-size: 16px; }
+        body {
+          font-family: "Roboto", sans-serif;
+          background-color: #fff;
+          font-size: 16px;
+          color: #777777;
+          -webkit-font-smoothing: antialiased;
+          overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 {
+          font-family: "Poppins", sans-serif;
+          color: #121212;
+          font-weight: 600;
+          margin: 0;
+        }
+        h1 { font-size: 38px; }
+        h2 { font-size: 32px; }
+        h3 { font-size: 28px; }
+        h4 { font-size: 24px; }
+        h5 { font-size: 20px; }
+        h6 { font-size: 16px; }
+        p {
+          margin: 0;
+          font-size: 16px;
+          line-height: 1.8;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+        }
+        a {
+          color: inherit;
+          text-decoration: none;
+          transition: all 0.3s ease-in-out;
+        }
+        a:hover {
+          color: #f72585;
+        }
+      </style>
+  
+      
     <link rel="icon" type="image/png" href="favicon.png">
     
     <link href="assets/css/themify-icons.css" rel="stylesheet">
     <link href="assets/css/flaticon.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    
     <link href="assets/css/animate.css" rel="stylesheet">
     <link href="assets/css/owl.carousel.css" rel="stylesheet">
     <link href="assets/css/owl.theme.css" rel="stylesheet">
-    <link href="assets/css/slick.css" rel="stylesheet">
-    <link href="assets/css/slick-theme.css" rel="stylesheet">
+   <!-- <link href="assets/css/slick.css" rel="stylesheet">-->
+    <!--<link href="assets/css/slick-theme.css" rel="stylesheet">-->
     <link href="assets/css/swiper.min.css" rel="stylesheet">
     <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
     <link href="assets/css/owl.transitions.css" rel="stylesheet">
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-
+     <!-- start preloader -->
+     <div class="preloader">
+        <div class="loader">
+            <div class="gear two">
+                <svg viewbox="0 0 100 100" fill="#131e4a">
+                    <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
+                </svg>
+            </div>
+            <div class="gear three">
+                <svg viewbox="0 0 100 100" fill="#fd5f17">
+                    <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+ <!-- end preloader -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -38,22 +99,8 @@
     <!-- start page-wrapper -->
     <div class="page-wrapper">
 
-        <!-- start preloader -->
-        <div class="preloader">
-            <div class="loader">
-                <div class="gear two">
-                    <svg viewbox="0 0 100 100" fill="#131e4a">
-                        <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
-                    </svg>
-                </div>
-                <div class="gear three">
-                    <svg viewbox="0 0 100 100" fill="#fd5f17">
-                        <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
-                    </svg>
-                </div>
-            </div>
-        </div>
-        <!-- end preloader -->
+       <!--Privusly preloader is here I trasnfer to head-->
+       
 
         <!-- Start header -->
         <header id="header" class="site-header header-style-2">
@@ -91,7 +138,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html"><img src="assets/images/Logo_saralainfrastructure.png" alt></a>  <!--Company logo-->
+                        <a class="navbar-brand" href="index.html"><img src="assets/images/Logo_saralainfrastructure.webp" loading="lazy" alt></a>  <!--Company logo-->
                     </div>
                     <div id="navbar" class="navbar-collapse collapse navigation-holder">
                         <button class="close-navbar"><i class="ti-close"></i></button>
@@ -150,7 +197,7 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="assets/images/slider/erection.jpg">
+                        <div class="slide-inner slide-bg-image " data-background="assets/images/slider/erection.webp" loading="lazy" >
                             <div class="container">
                                 <div data-swiper-parallax="300" class="slide-title">
                                     <h2>Experience a Hassle Free Happiness.</h2>
@@ -167,7 +214,7 @@
                         </div> <!-- end slide-inner --> 
                     </div> <!-- end swiper-slide -->
                     <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide-2.jpg">
+                        <div class="slide-inner slide-bg-image lazy-bg" data-background="assets/images/slider/slide-2.webp" loading="lazy">
                             <div class="container">
                                 <div data-swiper-parallax="300" class="slide-title">
                                     <h2>Experience a Hassle Free Happiness.</h2>
@@ -184,7 +231,7 @@
                         </div> <!-- end slide-inner --> 
                     </div> <!-- end swiper-slide -->
                     <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="assets/images/slider/Welding.jpg">
+                        <div class="slide-inner slide-bg-image lazy-bg" data-background="assets/images/slider/welding.webp" loading="lazy">
                             <div class="container">
                                 <div data-swiper-parallax="300" class="slide-title">
                                     <h2>Experience a Hassle Free Happiness.</h2>
@@ -202,7 +249,7 @@
                     </div> <!-- end swiper-slide -->
 
                     <div class="swiper-slide">
-                        <div class="slide-inner slide-bg-image" data-background="assets/images/slider/slide-4.jpg">
+                        <div class="slide-inner slide-bg-image lazy-bg" data-background="assets/images/slider/slide-4.webp" loading="lazy">
                             <div class="container">
                                 <div data-swiper-parallax="300" class="slide-title">
                                     <h2>The Best Move you will Ever Make</h2>
@@ -285,37 +332,37 @@
                     <div class="col col-xs-12">
                         <div class="service-grids clearfix">
                             <div class="grid">
-                                <img src="assets/images/services/mechanical.jpg" alt>
+                                <img src="assets/images/services/mechanical.webp" loading="lazy" alt>
                                 <h4><a href="#">✅ Mechanical solutions</a></h4>
                                 <p>Mechanical equipment work includes activities related to installation, maintenance, repair, and shutdown operations to ensure smooth and efficient functioning of machinery and infrastructure.</p>
                                 <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a>
                             </div>
                             <div class="grid">
-                                <img src="assets/images/services/pipeline.jpg" alt>
+                                <img src="assets/images/services/pipeline.webp" loading="lazy" alt>
                                 <h4><a href="#">✅ Piping & Plumbing</a></h4>
                                 <p> We are providing quality Solutions over Industrial Piping like Piping Design & Engineering, Pipe Fabrication & Welding, Piping Erection & Installation, Pipeline Maintenance & Repair</p>
                                 <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a>
                             </div>
                             <div class="grid">
-                                <img src="assets/images/services/welding.jpg" alt>
+                                <img src="assets/images/services/febrication.webp" loading="lazy" alt>
                                 <h4><a href="#">✅ Fabrication</a></h4>
                                 <p> We are providing solutions industrial fabrication like Structural Fabrication, Piping Fabrication, Industrial Platform & Support Fabrication, Heavy Equipment Fabrication</p>
                                 <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a>
                             </div>
                             <div class="grid">
-                                <img src="assets/images/services/erection.jpg" alt>
+                                <img src="assets/images/services/erection.webp" loading="lazy" alt>
                                 <h4><a href="#">✅ Erection</a></h4>
                                 <p> Multiple type of Erection solutions we are providing like Structural Steel Erection, Mechanical Equipment Erection, Tank & Vessel Erection, Industrial Platform & Walkway Erection</p>
                                 <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a>
                             </div>
                             <div class="grid">
-                                <img src="assets/images/services/shutdown.jpg" alt>
+                                <img src="assets/images/services/shutdown.webp" loading="lazy" alt>
                                 <h4><a href="#">✅ Industrial Shutdown Work</a></h4>
                                 <p>We are working on multiple Shutdown activities like Piping and valve replacements to prevent leaks, Boiler, heat exchanger, and turbine maintenance, Complete dismantling and overhauling of machinery.</p>
                                 <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a>
                             </div>
                             <div class="grid">
-                                <img src="assets/images/services/mentenance.jpg" alt>
+                                <img src="assets/images/services/mentenance.webp" loading="lazy" alt>
                                 <h4><a href="#">✅ Industrial maintenance Work </a></h4>
                                 <p>Types of Maintenance we are working like Preventive Maintenance, Corrective Maintenance, Predictive Maintenance, Overhauling & Retrofitting </p>
                                 
@@ -364,7 +411,7 @@
                             </div>
                             <div class="grid">
                                 <i class="fi flaticon-24-hours"></i>
-                                <h3>27/7 Support</h3>
+                                <h3>24/7 Support</h3>
                                 <p>Day or night, our dedicated team is always here to assist you</p>
                                 <p>Expert support available 24/7, keeping your business running without interruption.</p>
                             </div>
@@ -398,7 +445,7 @@
                 <div class="project-grids featured-project-slider clearfix">
                     <div class="grid">
                         <div class="img-holder">
-                            <img src="assets/images/featured-project-slider/mentenance.jpg" alt>
+                            <img src="assets/images/featured-project-slider/mentenance.webp" loading="lazy" alt>
                         </div>
                         <div class="overlay">
                             <span class="count">04.</span>
@@ -409,7 +456,7 @@
                     </div>
                     <div class="grid">
                         <div class="img-holder">
-                            <img src="assets/images/featured-project-slider/febrication.jpg" alt>
+                            <img src="assets/images/featured-project-slider/febrication.webp" loading="lazy" alt>
                         </div>
                         <div class="overlay">
                             <span class="count">03.</span>
@@ -420,7 +467,7 @@
                     </div>
                     <div class="grid">
                         <div class="img-holder">
-                            <img src="assets/images/featured-project-slider/erection2.jpg" alt>
+                            <img src="assets/images/featured-project-slider/erection.webp" loading="lazy" alt>
                         </div>
                         <div class="overlay">
                             <span class="count">04.</span>
@@ -432,7 +479,7 @@
                     </div>
                     <div class="grid">
                         <div class="img-holder">
-                            <img src="assets/images/featured-project-slider/piping2.jpg" alt>
+                            <img src="assets/images/featured-project-slider/piping2.webp" loading="lazy" alt>
                         </div>
                         <div class="overlay">
                             <span class="count">02.</span>
@@ -456,22 +503,22 @@
                     <div class="col col-xs-12"> 
                         <div class="partner-grids partners-slider">
                             <div class="grid">
-                                <img src="assets/images/partners/bhushan.png" alt>
+                                <img src="assets/images/partners/bhushan.png" loading="lazy" alt>
                             </div>
                             <div class="grid">
-                                <img src="assets/images/partners/syam.jpg" alt>
+                                <img src="assets/images/partners/syam.jpg" loading="lazy" alt>
                             </div>
                             <div class="grid">
-                                <img src="assets/images/partners/jsw.png" alt>
+                                <img src="assets/images/partners/jsw.png" loading="lazy" alt>
                             </div>
                             <div class="grid">
-                                <img src="assets/images/partners/thermax2.png" alt>
+                                <img src="assets/images/partners/thermax2.png" loading="lazy" alt>
                             </div>
                             <div class="grid">
-                                <img src="assets/images/partners/indiana.png" alt>
+                                <img src="assets/images/partners/indiana.png" loading="lazy" alt>
                             </div>
                             <div class="grid">
-                                <img src="assets/images/partners/tatasteel.png" alt>
+                                <img src="assets/images/partners/tatasteel.png" loading="lazy" alt>
                             </div>
                         </div>
                     </div>
@@ -541,7 +588,7 @@
                             <div class="grid">
                                 <div class="img-social">
                                     <div class="img-holder">
-                                       <img src="assets/images/team/engineerlogo.png" alt>
+                                       <img src="assets/images/team/engineerlogo.webp" loading="lazy" alt>
                                         
                                     </div>
                                     
@@ -554,16 +601,9 @@
                             <div class="grid">
                                 <div class="img-social">
                                     <div class="img-holder">
-                                        <img src="assets/images/team/supervisorlogo.png" alt>
+                                        <img src="assets/images/team/supervisorlogo.webp" loading="lazy" alt>
                                     </div>
-                                    <div class="social">
-                                        <ul>
-                                            <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                            <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="ti-pinterest"></i></a></li>
-                                        </ul>
-                                    </div>
+                                    
                                 </div>
                                 <div class="details">
                                     <h3>Supervisors</h3>
@@ -573,16 +613,9 @@
                             <div class="grid">
                                 <div class="img-social">
                                     <div class="img-holder">
-                                        <img src="assets/images/team/storekeeperlogo.png" alt>
+                                        <img src="assets/images/team/storekeeperlogo.webp" loading="lazy" alt>
                                     </div>
-                                    <div class="social">
-                                        <ul>
-                                            <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                            <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="ti-pinterest"></i></a></li>
-                                        </ul>
-                                    </div>
+                                   
                                 </div>
                                 <div class="details">
                                     <h3>Store keeper & Fabricator</h3>
@@ -593,16 +626,9 @@
                             <div class="grid">
                                 <div class="img-social">
                                     <div class="img-holder">
-                                        <img src="assets/images/team/fabricationlogo.png" alt>
+                                        <img src="assets/images/team/fabricationlogo.webp" loading="lazy" alt>
                                     </div>
-                                    <div class="social">
-                                        <ul>
-                                            <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                            <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
-                                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                                            <li><a href="#"><i class="ti-pinterest"></i></a></li>
-                                        </ul>
-                                    </div>
+                                    
                                 </div>
                                 <div class="details">
                                     <h3>Skilled and Unskilled workers</h3>
@@ -720,12 +746,12 @@
                             <div class="widget about-widget">
                                 
                                 <div class="logo widget-title">
-                                <img src="assets/images/Logo_saralainfrastructure.png" alt>
+                                <img src="assets/images/Logo_saralainfrastructure.webp" loading="lazy" alt>
                                     
                                     <!--<img src="assets/images/saralafooterlogo.png" alt>-->
                                 </div>
                                 <div class="letter-log-logo2">
-                                    <img src="assets/images/saralafooterlogo.png" alt>
+                                    <img src="assets/images/saralafooterlogo.webp" loading="lazy" alt>
                                 </div>
                                 <p>With a team of expert engineers and workers, we deliver high-quality fabrication, erection, piping and mechanical equipment for industrial solutions tailored to your needs.</p>
                                 <div class="social-icons">
